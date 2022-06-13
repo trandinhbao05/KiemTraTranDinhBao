@@ -46,6 +46,8 @@
             <strong>Hình</strong>
             @Html.EditorFor(model => model.Hinh, new { htmlAttributes = new { @class = "form-control" } })
             @Html.ValidationMessageFor(model => model.Hinh, "", new { @class = "text-danger" })
+@*            <img src=" @Html.DisplayFor(model => model.Hinh)" width="125px" alt="hinh thumbnail" />
+*@
             <input type="file" name="fileUpload" id="fileUpload" accept="image/*"
                    style="display:none;" />
             <input type="button" id="btnUpload" value="Chọn" class="btn btn-success" />
